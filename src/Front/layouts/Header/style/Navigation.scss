@@ -1,0 +1,150 @@
+.nav-default {
+    position: sticky;
+    top: 0;
+    background: #fff;
+    z-index: 20;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.nav-logo {
+    max-width: 256px;
+    height: auto;
+}
+
+.nav-ul-default{
+    display: flex;
+    max-width: 980px;
+    width: 100%;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    margin-left: auto;
+    margin-top: 15px;
+}
+
+.nav-a {
+    text-decoration: none;
+    color: #333333;
+    font-size: 14px;
+    padding: 8px 19px;
+    font-weight: 600;
+    transition: color .3s linear, background .3s linear;
+}
+
+.nav-a:hover {
+    text-decoration: none;
+    color: #fff;
+    background-color: #9FC246;
+}
+
+.hamburger-container {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.hamburger-hidden {
+    display: none;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+  
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+  
+.change .bar2 {opacity: 0;}
+  
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+
+.menu-dropdown-default {
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.menu-dropdown-default-li {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+}
+
+.menu-dropdown-hidden {
+    display: none;
+}
+
+.menu-dropdown-open {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    z-index: 999;
+    background-color: #fff;
+}
+
+.menu-arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid green;
+    position: relative;
+    top: -24px;
+    left: 131px;
+    width: 17px;
+    height: 24px;
+    transform: rotate(90deg);
+    color: green;
+}
+
+.active {
+    color: green;
+}
+
+@media (max-width:902px) {
+    .hamburger-show {
+        display: block;
+        width: 35px;
+        margin-left: auto;
+    }
+
+    .nav-ul-responsive{
+        flex-direction: column;
+        display: none;
+    }
+
+    .nav-a:hover {
+        background-color: transparent;
+        color: green;
+    }
+
+    .open-menu {
+        display: flex;
+        animation: menuOpenMobile 1s;
+    }
+
+    .menu-dropdown-open {
+        display: flex;
+        position: inherit;
+        animation: menuOpenMobile 0.5s;
+    }
+}
+
+@keyframes menuOpenMobile {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}

@@ -1,0 +1,12 @@
+$navBarBg: #f48045; 
+
+.custom-nav-bar{
+    background-color: $navBarBg;
+}
+
+@media screen and (max-width: 420px) {
+    .top-bar-header {
+        display: flex;
+        flex-direction: column;
+    }   
+}

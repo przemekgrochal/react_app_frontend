@@ -1,0 +1,36 @@
+.home-page-slider-medium {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.carousel-slider-medium {
+    ol {
+        position: relative;
+        li {
+            background-color: blue;
+        }
+    }
+
+    // .controls-top {
+    //     margin-bottom: 1.88rem;
+    //     text-align: center;
+    // }
+    
+    // .controls-top .btn-floating {
+    //     background: #4285f4;
+    // }
+
+    // a.waves-effect, a.waves-light {
+    //     display: inline-block;
+    // }
+}
+
+.carousel-multi-item .carousel-item {
+    display: flex !important;
+}
+
+@media (max-width:800px) {
+    .carousel-multi-item .carousel-item {
+        flex-direction: column;
+    }
+}

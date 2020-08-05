@@ -1,0 +1,77 @@
+.conferences-list {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+
+    .conferences-page-pagination {
+        width: 200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .box.box-solid.box-info {
+        border: 1px solid #00c0ef;
+    }
+
+    .box.box-solid.box-info>.box-header {
+        color: #fff;
+        background: #00c0ef;
+        background-color: #00c0ef;
+    }
+
+    .box-header {
+        color: #444;
+        display: block;
+        padding: 10px;
+        position: relative;
+    }
+
+    .box-body {
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 3px;
+        border-bottom-left-radius: 3px;
+        padding: 10px;
+    }
+
+    .box {
+        position: relative;
+        border-radius: 3px;
+        background: #ffffff;
+        border-top: 3px solid #d2d6de;
+        margin-bottom: 20px;
+        width: 100%;
+        box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+    }
+    .row-striped:nth-of-type(odd){
+        background-color: #efefef;
+        border-left: 4px #000000 solid;
+      }
+      
+      .row-striped:nth-of-type(even){
+        background-color: #ffffff;
+        border-left: 4px #efefef solid;
+      }
+      
+      .row-striped {
+          padding: 15px 0;
+      }
+}
+
+@media screen and (max-width: 992px) {
+
+    .conferences-list {
+
+        display: flex;
+        flex-direction: column;
+
+        .col-3 {
+            max-width: 100%;
+        }
+
+        .col-9 {
+            max-width: 100%;
+        }
+    }
+}
+  
